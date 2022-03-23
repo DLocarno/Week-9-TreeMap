@@ -1,0 +1,51 @@
+[
+    {
+        "name": "R",
+        "children": [
+            {
+                "name": "A"
+            }
+        ]
+    },
+    {
+        "name": "A",
+        "children": [
+            {
+                "name": "B"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    {
+        "name": "B",
+        "children": [
+            {
+                "name": "D",
+                "value": 30
+            },
+            {
+                "name": "E",
+                "value": 50
+            }
+        ]
+    },
+    {
+        "name": "C",
+        "children": [
+            {
+                "name": "F",
+                "value": 20
+            },
+            {
+                "name": "G",
+                "value": 40
+            },
+            {
+                "name": "H",
+                "value": 60
+            }
+        ]
+    }
+]

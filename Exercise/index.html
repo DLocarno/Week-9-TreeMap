@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <script src="./libs/echarts.min.js"></script>
     <title>
-        US Population by County
+        E-charts Assignment
     </title>
+    <script src="./libs/echarts.min.js"></script>
     <script src="../js/d3.js"></script>
 </head>
 
@@ -14,16 +14,16 @@
     <div id="container" style="height: 100%"></div>
     <script type="text/javascript">
 
-        d3.json("../data/test.json").then(function (Data) {
-            let dom = document.getElementById("container"); // select container
+        d3.json("./modified_data.json").then(function (Data) {
+            let dom = document.getElementById("container"); // select div container
             let treeMap = echarts.init(dom); // initiate echarts object
+
             treeMap.setOption({             // define type of visualization
                 series: [
                     {
-                        type: 'treemap', // visualization type
-                        data: Data,     // data
-                        label: {        // show or hide labels
-                            show: true,
+                        type: 'treemap', // treemap type
+                        data: Data,     // specify data
+                        label: {
                             formatter: '{b}'
                         },
                         levels: [{
